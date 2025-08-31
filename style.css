@@ -1,0 +1,374 @@
+* {
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+
+    >li {}
+
+}
+
+i {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Vazir";
+    src: url(font/vazir-font-v16.1.0/Vazir.eot);
+    src: url(font/vazir-font-v16.1.0/Vazir.woff2) format("woff2"),
+        url(font/vazir-font-v16.1.0/Vazir.woff) format("woff"),
+        url(font/vazir-font-v16.1.0/Vazir.ttf) format("truetype");
+}
+
+main {
+    font-family: Vazir;
+
+    >header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+z-index: 1391;
+        >div {
+            &:nth-of-type(1) {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+            }
+
+            &:nth-of-type(2) {}
+
+            &:nth-of-type(3) {}
+        }
+    }
+
+}
+
+.icon {
+    width: 100px;
+
+
+}
+
+.offcanvas {
+    background-color: #343333;
+}
+
+.form-control {
+    height: 35px;
+    border-radius: 20px;
+    width: 50px;
+}
+
+.input-group-text {
+    height: 35px;
+    border-radius: 20px;
+}
+
+/* 
+.search-box {
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    padding: 0 15px;
+}
+
+
+
+.search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    direction: rtl;
+    background: transparent;
+}
+
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* یا هر عرضی که خواستی */
+}
+
+.search-box1 {
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+}
+
+.searchInp {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    direction: rtl;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+}
+
+
+.search-results {
+
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 999;
+}
+
+.search-results h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #212121;
+}
+
+.search-results p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 380px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+    background: #EEE;
+}
+
+.carousel-cell {
+    width: 18%;
+    height: 300px;
+    ;
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+.carousel-cell.is-selected {
+    background: rgb(255, 255, 255);
+}
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.image {
+    width: 80%;
+}
+
+.foot {
+    background-color: #212121;
+}
+
+.input {
+    background-color: #212121;
+}
+
+
+.hover {
+    &:hover {
+        color: #2B67DF;
+    }
+}
+
+.image1 {
+    width: 100px;
+}
+
+.hover-footer:hover {
+    color: #2B67DF !important;
+    cursor: pointer;
+}
+
+.mega-menu:hover {
+    >div {
+        display: flex !important;
+    }
+}
+
+.area {
+    display: none !important;
+    position: absolute;
+    top: 70px;
+    right: 2px;
+    width: 98vw;
+    height: 95vh;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.call {
+    height: 150vh;
+    background-color: white;
+}
+
+.outline13 {
+    border: solid 3px #2B67E5;
+    width: 400px;
+    height: 380px;
+}
+
+.call-me {
+    position: absolute;
+    left: 40px;
+}
+
+.modal {
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: black;
+    z-index: 100000 !important;
+}
+
+.place1 {
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+
+}
+
+
+.search-box1 {
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+}
+
+.mobile {
+    display: none;
+    background-color: #212121;
+}
+.ul{
+   width: 250px;
+    height: 600px;
+}
+.open{
+    background-color: #212121;
+}
+.menu-hum{
+    width: 70%;
+}
+.login-inp{
+    border: none;
+    width: 100% ;
+    margin: auto;
+    border-bottom: block;
+}
+
+/* width: 1600px;
+    background-color: #fff;
+    color: #212121;
+    position: absolute;
+    top: 20;
+    right: 30%;
+    position: absolute;
+    top: 10%;
+    left: 1000%;
+    width: 1500px;
+    background-color: #fff;
+    color: #212121;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; */
+
+
+
+/* موبایل کوچک */
+.carousel-cell {
+    width: 30%;
+}
+
+/* تبلت */
+@media (min-width: 768px) {
+    .carousel-cell {
+        width: 45%;
+    }
+}
+
+/* دسکتاپ */
+@media (min-width: 1024px) {
+    .carousel-cell {
+        width: 18%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+}
+
+/* 
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+} */
